@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess The Number Flask</title>
+</head>
+<body>
+<h2>Is it your number {{ guess_num }} ?</h2>
+<form action="/game" method="POST">
+        <input type="submit"
+               name="answer"
+               value="Too small">
+
+        <input type="submit"
+               name="answer"
+               value="Too big">
+
+        <input type="submit"
+               name="answer"
+               value="You win">
+
+        <input type="hidden"
+               name="min_"
+               value="{{min_}}">
+
+        <input type="hidden"
+               name="max_"
+               value="{{max_}}">
+
+        <input type="hidden"
+               name="guess_num"
+               value="{{guess_num}}">
+
+</form>
+</body>
+</html>
